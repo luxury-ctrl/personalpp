@@ -1,0 +1,193 @@
+/* Pengaturan Dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Warna latar belakang umum */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #007bff; /* Biru cerah, mewakili teknologi */
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    float: left;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Kuning keemasan saat di-hover */
+}
+
+/* Clearfix untuk header */
+header .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Bagian Hero (Perkenalan Awal) */
+.hero-section {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradien biru */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Bagian Konten Umum */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 3px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.colored-section {
+    background-color: #e9f7ff; /* Warna latar belakang berbeda untuk memisahkan bagian */
+}
+
+/* Bagian Keahlian */
+.keahlian-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.keahlian-list li {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    flex: 0 1 calc(50% - 15px); /* Dua kolom */
+    font-weight: 500;
+}
+
+.skill {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Bagian Pendidikan */
+.pendidikan-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.pendidikan-item h3 {
+    color: #333;
+    margin-top: 0;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+}
+
+/* Bagian Kontak */
+#kontak p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#kontak p a:hover {
+    text-decoration: underline;
+}
+
+#kontak p {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive (Opsional, agar tampilan bagus di HP) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        float: none;
+        text-align: center;
+    }
+    nav ul {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .keahlian-list li {
+        flex: 0 1 100%; /* Satu kolom di HP */
+    }
+}
